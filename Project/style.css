@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.d-flex button{
+    margin: 1.5em 0.6em;
+    padding: 0.4em 2.4em;
+}
+
+.d-flex table{
+    margin: 1em 10em;
+}
+
+table .btnedit {
+    color: aqua;
+    cursor: pointer;
+}
+
+.success{
+    background-color: rgb(141, 244, 201);
+    padding: 1em;
+}
+
+.error{
+    background-color: rgb(191, 3, 25);
+    padding: 1em;
+}
+
+.failure{
+    background-color: rgb(191, 3, 25);
+    padding: 1em;
+}
+
+/*if(empty($_POST["create"])){
+    createData();
+}
+
+
+function createData(){
+
+    $bookname = textbook(value:'book_name');
+    $bookpublisher = textbook(value:'book_publisher');
+    $bookprice = textbook(value:'price');
+
+    if($bookname && $bookpublisher && $bookprice){
+        $sql = "INSERT INTO books(book_name,book_publisher,book_price) 
+        VALUES('$bookname','$bookpublisher','$bookprice')";
+        if(mysqli_query($GLOBALS['db'], $sql)){
+            echo "Recorded";
+        }else{
+            echo "failure";
+        }
+    }else{
+        echo "Please provide info.";
+    }
+
+}
+
+function textbook($value){
+
+    $textbook = mysqli_real_escape_string($GLOBALS['db'],trim($_POST["$value"]));
+    if(empty($textbook)){
+        return false;
+    }else{
+        return $textbook;
+    }
+
+}*/
